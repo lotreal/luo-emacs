@@ -4,7 +4,7 @@ My Emacs, Base [Prelude](https://github.com/bbatsov/prelude).
 ## INSTALL
 
 ```bash
-yum install aspell
+yum install aspell aspell-en
 
 curl -L https://git.io/epre | sh
 emacs
@@ -20,6 +20,18 @@ cd .emacs.d/luo-emacs/vendor/org-mode
 make && make autoloads
 
 sed -i 's/"personal" prelude-dir/"luo-emacs" prelude-dir/g' ~/.emacs.d/init.el
+```
+
+## FAQ
+
+### FIX: Warning (:error): Unable to find editorconfig executable.  Styles will not be applied.
+
+```bash
+https://github.com/editorconfig/editorconfig-core-c.git
+cd editorconfig-core-c
+yum install cmake pcre
+cmake .
+make install
 ```
 
 ## LINKS

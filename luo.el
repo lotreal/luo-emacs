@@ -25,7 +25,8 @@
 (ispell-change-dictionary "american" t)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-
+(setq ispell-program-name "aspell" ; use aspell instead of ispell
+      ispell-extra-args '(""))
 
 ;; load modules
 (load (expand-file-name "el-cs.el" luo-modules-dir))
