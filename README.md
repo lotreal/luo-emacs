@@ -19,6 +19,8 @@ git submodule update
 
 cd .emacs.d/luo-emacs/vendor/org-mode
 make && make autoloads
+
+sed -i 's/"personal" prelude-dir/"luo-emacs" prelude-dir/g' ~/.emacs.d/init.el
 ```
 
 ## LINKS
