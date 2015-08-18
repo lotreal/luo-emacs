@@ -15,12 +15,12 @@
 (message "Emacs-LUO is loading... (%s)" emacs-luo-dir)
 
 
-(prelude-require-packages '(psvn yaml-mode nginx-mode))
+(prelude-require-packages '(nginx-mode editorconfig))
 
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)
-(scroll-bar-mode 0)
+;; (scroll-bar-mode 0)
 (load-theme 'manoj-dark t)
 (ispell-change-dictionary "american" t)
 
