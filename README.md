@@ -1,6 +1,5 @@
 # luo-emacs
-My Emacs
-
+My Emacs, Base [Prelude](https://github.com/bbatsov/prelude).
 
 ## INSTALL
 
