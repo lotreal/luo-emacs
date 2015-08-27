@@ -20,7 +20,7 @@
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)
-;; (scroll-bar-mode 0)
+(scroll-bar-mode 0)
 (load-theme 'manoj-dark t)
 (ispell-change-dictionary "american" t)
 
@@ -34,7 +34,7 @@
 (load (expand-file-name "el-keybindings.el" luo-modules-dir))
 (load (expand-file-name "el-recentf.el" luo-modules-dir))
 (load (expand-file-name "el-js.el" luo-modules-dir))
-(load (expand-file-name "el-org.el" luo-modules-dir))
+;; (load (expand-file-name "el-org.el" luo-modules-dir))
 (load "editorconfig")
 
 (provide 'luo)
