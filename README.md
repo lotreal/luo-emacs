@@ -3,11 +3,11 @@ My Emacs, Base [Prelude](https://github.com/bbatsov/prelude).
 
 ## INSTALL
 
-```bash
-yum install aspell aspell-en
+First: install emacs (Version > 24.4) -- install-emacs-24.5.sh
 
+```bash
 curl -L https://git.io/epre | sh
-emacs
+
 git clone git@github.com:lotreal/luo-emacs.git ~/.emacs.d/luo-emacs
 
 cd .emacs.d/luo-emacs
