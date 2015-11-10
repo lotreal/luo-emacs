@@ -20,7 +20,7 @@
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)
-(scroll-bar-mode 0)
+
 (load-theme 'manoj-dark t)
 (ispell-change-dictionary "american" t)
 
