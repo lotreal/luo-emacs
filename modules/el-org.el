@@ -3,7 +3,7 @@
 ;;; Commentary:
 
 ;;; code
-(prelude-require-packages '(bbdb))
+;; (prelude-require-packages '(bbdb))
 
 (add-to-list 'load-path (expand-file-name "org-mode/lisp" luo-vendor-dir))
 (add-to-list 'load-path (expand-file-name "org-mode/contrib/lisp" luo-vendor-dir))

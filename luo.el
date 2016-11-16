@@ -14,10 +14,12 @@
 
 (message "Emacs-LUO is loading... (%s)" emacs-luo-dir)
 
+;; (setq tags-table-list
+;;      '("/luo/m/reksai/src/maokai"))
 
-(prelude-require-packages '(nginx-mode editorconfig))
+(prelude-require-packages '(nginx-mode editorconfig git-gutter))
 
-
+;; (global-git-gutter-mode +1)
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 
@@ -29,11 +31,11 @@
       ispell-extra-args '(""))
 
 ;; load modules
-(load (expand-file-name "el-cs.el" luo-modules-dir))
+;; (load (expand-file-name "el-cs.el" luo-modules-dir))
 
 (load (expand-file-name "el-keybindings.el" luo-modules-dir))
-(load (expand-file-name "el-recentf.el" luo-modules-dir))
-(load (expand-file-name "el-js.el" luo-modules-dir))
+;; (load (expand-file-name "el-recentf.el" luo-modules-dir))
+;; (load (expand-file-name "el-js.el" luo-modules-dir))
 ;; (load (expand-file-name "el-org.el" luo-modules-dir))
 (load "editorconfig")
 
