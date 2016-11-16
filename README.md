@@ -6,17 +6,18 @@ My Emacs, Base [Prelude](https://github.com/bbatsov/prelude).
 First: install emacs (Version > 24.4) -- install-emacs-24.5.sh
 
 ```bash
+#!/usr/bin/env bash
 curl -L https://git.io/epre | sh
 
 git clone git@github.com:lotreal/luo-emacs.git ~/.emacs.d/luo-emacs
 
-cd .emacs.d/luo-emacs
-cp prelude-modules.el ../prelude-modules.el
+cd ~/.emacs.d/luo-emacs
+cp vendor/prelude-modules.el ../prelude-modules.el
 
 git submodule init
 git submodule update
 
-cd .emacs.d/luo-emacs/vendor/org-mode
+cd ~/.emacs.d/luo-emacs/vendor/org-mode
 make && make autoloads
 
 sed -i 's/"personal" prelude-dir/"luo-emacs" prelude-dir/g' ~/.emacs.d/init.el
@@ -27,9 +28,11 @@ sed -i 's/"personal" prelude-dir/"luo-emacs" prelude-dir/g' ~/.emacs.d/init.el
 ### FIX: Warning (:error): Unable to find editorconfig executable.  Styles will not be applied.
 
 ```bash
-https://github.com/editorconfig/editorconfig-core-c.git
+#!/usr/bin/env bash
+cd /tmp
+git clone https://github.com/editorconfig/editorconfig-core-c.git
 cd editorconfig-core-c
-yum install cmake pcre
+yum install -y cmake pcre pcre-devel
 cmake .
 make install
 ```
