@@ -9,7 +9,7 @@ First: install emacs (Version > 24.4) -- install-emacs-24.5.sh
 #!/usr/bin/env bash
 curl -L https://git.io/epre | sh
 
-git clone git@github.com:lotreal/luo-emacs.git ~/.emacs.d/luo-emacs
+git clone https://github.com/lotreal/luo-emacs.git ~/.emacs.d/luo-emacs
 
 cd ~/.emacs.d/luo-emacs
 cp vendor/prelude-modules.el ../prelude-modules.el
