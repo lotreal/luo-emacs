@@ -3,11 +3,11 @@
 ;;; Commentary:
 
 ;;; code
-;; (prelude-require-packages '(bbdb))
+(prelude-require-packages '(bbdb))
 
 (add-to-list 'load-path (expand-file-name "org-mode/lisp" luo-vendor-dir))
 (add-to-list 'load-path (expand-file-name "org-mode/contrib/lisp" luo-vendor-dir))
-;; (require 'org)
+(require 'org)
 ;; (load (expand-file-name "org-octopress.el" luo-vendor-dir))
 (load (expand-file-name "org-norang.el" luo-vendor-dir))
 
@@ -61,6 +61,11 @@
         ))
 
 (setq org-export-with-sub-superscripts nil)
+
+(require 'org-crypt)
+(org-crypt-use-before-save-magic)
+(setq org-tags-exclude-from-inheritance (quote("crypt")))
+(setq org-crypt-key nil)
 
 (provide 'el-org)
 ;;; el-org.el ends here
