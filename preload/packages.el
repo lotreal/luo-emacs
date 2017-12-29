@@ -1,8 +1,7 @@
 ;; my-packages.el
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+             '("melpa" . "http://elpa.emacs-china.org/melpa/") t)
 (add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+             '("marmalade" . "http://elpa.emacs-china.org/marmalade/") t)
 (package-initialize)
-
